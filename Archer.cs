@@ -28,7 +28,10 @@ namespace Lab2_OOP_basics
 
         public void moveTo((int, int) coords)
         {
-            _coords = coords;
+            if (!isAlive())
+            {
+                _coords = coords;
+            }
         }
     }
 }
